@@ -1,0 +1,262 @@
+Version 2.3.25 - February 21, 2016
+
+	Tweaked subtotal calculation for WooCommerce 2.4 and newer
+
+Version 2.3.24 - August 21, 2015
+
+	Updated per-product rules for variable products to support WooCommerce 2.4.x
+
+Version 2.3.23 - June 20, 2015
+
+	Tweaked global rule processing
+
+Version 2.3.22 - May 26, 2015
+
+	Tweaked rule processing
+
+Version 2.3.21 - May 18, 2015
+
+	Tweaked per-product rule configuration and processing
+
+Version 2.3.20 - May 12, 2015
+
+	Add a check to ensure a product method exists before calling it.
+
+Version 2.3.19 - May 5, 2015
+
+	Updated for gateway better compatbility with IgniteWoo's Payment Gateway Fees & Restrictions
+
+Version 2.3.18 - April 30, 2015
+
+	Tweaked layout look and feel for WooCommerce 2.3.x and newer
+	
+	Replaced Chosen Javascript library with Select2 for WooCommerce 2.3.x and newer
+	
+Version 2.3.17 - April 30, 2015
+
+	Tweaked CSS for rules configuration
+	
+Version 2.3.16 - February 2, 2015
+
+	Added new setting for the Wholesale Payment Gateway - admin can optionally leave all enabled gateways available at checkout
+
+Version 2.3.15 - December 12, 2014
+
+	Updated detection for one successfully processed rule to address edge cases where discount rule sets the price to the same as the wholesale price
+
+Version 2.3.14 - October 20, 2014
+
+	Updated to support wholesale text strings in WooCommerce 2.2.x
+
+Version 2.3.13 - August 5, 2014
+
+	Tweak price processing to strip HTML and currency symbol before reformatting it
+
+Version 2.3.12 - June 10, 2014
+
+	Further tweaks for EU / AU tax conditions
+
+Version 2.3.11 - June 9, 2014
+
+	Further tweaks for EU / AU tax conditions
+
+Version 2.3.10 - June 2, 2014
+
+	Added object term checking for global rule application when rule applies to categories
+
+Version 2.3.9 - May 19, 2014
+
+	Properly check to see if the wholesale payment gateway is enabled before allowing its use
+
+Version 2.3.8 - May 11, 2014
+
+	Fixed a typo
+
+Version 2.3.7 - May 8, 2014
+
+	Tweaked parameter passed to has_filterable_role()
+
+Version 2.3.5 - May 7, 2014
+
+	Updated filtering to support IgniteWoo Tiered Pricing 
+
+Version 2.3.4 - May 5, 2014
+
+	Updated availability checking and form field label retrieval for the payment gateway as it related to WC 2.1
+
+Version 2.3.3 - May 5, 2014
+
+	Remove unnecessary is_available filter for shipping module
+
+Version 2.3.2 - May 2, 2014
+
+	Updated for better tax support
+	
+Version 2.3.1 - April 16, 2014
+
+	Re-instated the previous retail and wholesale filters, added a setting that allows admins to optionally enable the new filters added in version 2.3
+
+	Updated to suppport the new tax setting for Ajax requests on the checkout page
+
+Version 2.3 - April 14, 2014
+
+	Rewrote the retail and wholesale filtering functions. This should prevent menu oddities that occur in some themes when those features are turned on.
+
+Version 2.2.17 - April 8, 2014
+
+	Fixed the new tax setting so that it only applies to wholesale buyers
+
+Version 2.2.16 March 28, 2014
+
+	Add support for displaying prices without tax but charging taxes at checkout. Useful for EU users. 
+	
+	Changed the "Disable Tax" setting label to "Tax Setting" and added 3 options that apply to wholesale buyers: "Charge tax", "Do not charge tax", and "Display price without tax, charge tax at checkout"
+	
+Version 2.2.15 March 24, 2014
+
+	Updated redirect URL for the wholesale psuedo-payment gateway
+
+Version 2.2.14 February 27, 2014
+
+	Tweaked CSS for site wide rules for WooCommerce 2.1 support
+
+Version 2.2.13 February 7, 2014
+
+	Tweaked global rule creation to avoid inadvertantly mixing rules
+
+Version 2.2.12 January 21, 2014
+
+	WooCommerce 2.1 compatbility
+
+Version 2.2.11 December 2, 2013
+
+	Updated to support IgniteWoo's Tiered Pricing without a need for the Wholesale Pricing base plugin.
+
+Version 2.2.10 November 26, 2013
+
+	Fixed global rule set indexing that caused a problem saving newly added rulesets in some situations
+
+Version 2.2.9 August 29, 2013
+
+	Minor tweak to provide compatbility and support for our WooCommerce Tiered Pricing plugin
+
+Version 2.2.8 August 8, 2013
+
+	Added language translation via load_plugin_textdomain
+	
+	Added code that makes a given variation unavailable for purchase if the "product filter" is turned on and a variation doesn't have a wholesale price set. 
+	
+Version 2.2.7 July 12, 2013
+
+	Global rules now support rules on a per-user, per-role basis and can be triggered on line item quantity of an item in the cart of the total number of items in the cart from specific categories.
+	
+Version 2.2.6 July 12, 2013
+
+	Fixed typo in retail filtering code
+	
+Version 2.2.5 July 1, 2013
+
+	Tweaked Wholesale Shipping to compensate is is_admin() return true, which sometimes doesn't unset the other shipping methods when necessary.
+
+Version 2.2.4 June 2, 2013
+
+	Added shortcodes to compensate for product filtering. If your site uses WooCommerce shortcodes then use the equivalent shortcodes outlined in the documentation to ensure that filtering takes place. 
+
+Version 2.2.3.4 May 15, 2013
+
+	Fixed condition where on some sites the checkout Ajax doesn't work properly 
+
+Version 2.2.3.3 May 8, 2013
+
+	Corrected filter than was not returning a label string correctly
+
+Version 2.2.3.2 May 8, 2013
+
+	Removed debug code that was generating errors in some instances
+	
+	Add hooked to remove the "(Free)" label suffix forcibly inserted by WooCommerce for the Wholesale shipping option.
+	
+	Changed hook priority for removing all shipping options when Wholesale Shipping is enabled. Hopefully this prevents other shipping methods from being displayed.
+
+Version 2.2.3.1 April 4, 2013
+
+	Fixed return value for filtering product queries
+
+Version 2.2.3 April 3, 2013
+
+	Fixed wholesale payment and shipping gateway settings save process
+	
+	Fixed condition where AJAX on the checkout page sometimes breaks price discounting
+
+	Fixed condition where applying a product-level rule to all variations sometimes doesn't generate a discount
+	
+Version 2.2.2.2 March 28, 2013
+
+	Fixed oddity with Javascript and checkboxes in rule configurationsf
+	
+Version 2.2.2.1 March 28, 2013
+
+	Fixed price display on Products list page in the WordPress admin area
+
+Version 2.2.2 March 27, 2013
+
+	Fixed WooCommerce 1.6.x / 2.x cross-compatibility issue where Cart Total may not properly calculate variations discount correctly when using discount rules.
+
+Version 2.2.1 March 13, 2013
+
+	Fixed problem where post content repeats on single product pages when logged in as a wholesale buyer.
+
+Version 2.2 March 8, 2013
+
+	Added support for WooCommerce 2.0
+
+Version 2.1.9 - February 12, 2013
+
+	Fixed type checking issue that generates a warning message
+
+Version 2.1.8 - February 11, 2013
+
+	Fixed issue where subtotal was not calculated on the discounted price when a rule is applied
+	that adjusts the price. 
+	
+Version 2.1.7 -January 17, 2012
+
+	Fixed issue where under certain conditions products page might show up empty
+	
+Version 2.1.6.1 -January 14, 2012
+
+	Fixed issue where cart subtotal doesn't display in certain situations
+
+
+Version 2.1.6 -January 14, 2012
+
+	Fixed issue where single product page might show the product multiple times
+	when an administrator is logged in
+	
+Version 2.1.5 -January 4, 2012
+
+	Updated to support automatic updates
+	
+Version 2.1.4 - December 12, 2012
+
+	- Fixed a bug where rules did not always process properly
+	- Fixed a bug where price may not always display properly
+
+Version 2.1.3 - November 27, 2012
+
+	- Fixed issues related to tax removal
+	- Added new setting for filtering retail-only products. When set, retail buyers won't see wholesale-only products.
+
+Version 2.1.2 - October 24, 2012
+
+	- Fixed issue with Wholesale Shipping Gateway and Wholesale Payment Gateways no operating properly
+
+
+Version 2.1.1 - September 28, 2012
+
+	- Fixed minor warning message with a class constructor
+
+
+Version 2.1 - September 28, 2012
+
+	- Initial public release

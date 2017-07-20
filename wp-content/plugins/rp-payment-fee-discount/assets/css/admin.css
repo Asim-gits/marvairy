@@ -1,0 +1,14 @@
+.rp_table tr td{padding-bottom: 15px;}
+.rppfdcontainer tr td.label{font-weight: bold;}
+.input_field{width:150px;}
+label.px{font-size: 12px;font-style: italic;font-weight: bold;text-transform: lowercase;}
+.rp_table tr td.setting{  border-bottom: 2px solid #000;    color: #000;    font-size: 15px;    font-weight: bold;    padding-bottom: 5px;}
+.rppfdcontainer{width:90%;margin-top:20px;}
+.rppfdcontainer .hndle{margin: 0px;padding: 10px 15px;}
+.rp_table{width:100%;}
+.rpwcf_select2{min-width: 150px;max-width: 150px;}
+.select2-search-choice-close:before{content:"" !important;}
+.rppfdcontainer .rp_table tr{vertical-align: top;}
+.rppfdcontainer table{width:100%;}
+.rppfdcontainer table th{text-align: left;padding: 15px 0;}
+.rppfdcontainer input[type="number"]{width:100px;}

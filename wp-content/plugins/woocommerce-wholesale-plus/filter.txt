@@ -1,0 +1,18 @@
+
+/**
+
+Replace "my_new_role_slug" with the slug of your new role. For example, if the new role is called "Dallas Buyers" then the slug is probably "dallas_buyers"
+
+*/
+
+add_filter( 'woocommerce_shipping_free_wholesale_shipping_is_available', 'user_gets_free_shipping' );
+
+function user_gets_free_shipping( $is_available ) { 
+
+	if ( current_user_can( 'my_new_role_slug' ) )
+		return true;
+
+	return false;
+
+
+}

@@ -1,0 +1,254 @@
+Version 2.6.35 - August 16, 2016
+
+	Remove checking in "get price" hook for WC 2.1 - no necessary
+
+Version 2.6.34 - October 16, 2015
+
+	Prevent wholesale text from displaying twice, might happen when using Wholesale Pricing Plus
+
+Version 2.6.33 - September 28, 2015
+
+	Updated to support IgniteWoo's Woo "Tax Exempt" plugin
+	
+	Updated to address price caching in WooCommerce 2.4 and newer
+
+Version 2.6.32 - September 13, 2015
+
+	Updated HTML, CSS, and Ajax for WooCommerce 2.4 and newer
+
+Version 2.6.31 - August 31, 2015
+
+	Updated HTML price hooks to consider situations where variable products do not have all variations linked
+
+Version 2.6.30 - February 16, 2015
+
+	WooCommerce 2.3.x compatibility
+	
+	Updated to support changes in WooCommerce variation settings
+
+Version 2.6.29 - November 18, 2014
+
+	Adjusted variation availability for WC 2.2.x when variation don't have a regular price set
+
+Version 2.6.28 - October 20, 2014
+
+	Tweaks for WooCommerce 2.2.x compatibility
+
+Version 2.6.27 - June 10, 2014
+
+	Further tweaks for EU / AU tax conditions
+
+Version 2.6.26 - June 9, 2014
+
+	Added per-product and per-variation text setting that can be displayed after the wholesale price
+
+Version 2.6.25 - June 2, 2014
+
+	Further tweaks for EU / AU tax conditions
+
+Version 2.6.24 - May 19, 2014
+
+	Changed hook priority for determing if a product is purchasable to compensate for changes in WooCommerce
+
+Version 2.6.23 - May 14, 2014
+
+	Tweaked object checking in the get_price hook function
+
+Version 2.6.22 - May 7, 2014 
+
+	Fixed typo.
+
+Version 2.6.21 - May 7, 2014
+
+	Remove cookies for wholesale buyers upon logout
+	
+	Reinstated previously remove code to avoid PHP errors in WooCommerce 2.1
+
+Version 2.6.20 - May 2, 2014
+
+	Updated for better tax support
+
+Version 2.6.19 - April 24, 2014
+
+	Updated to allow for wholesale prices of zero.
+
+Version 2.6.18 - April 14, 2014
+
+	Removed tax setting hook so that it doesn't affect WooCommerce settings
+	
+	Removed previously added line of code that was added for WooCommerce 2.1 in maybe_return_price()
+
+Version 2.6.17 March 28, 2014
+
+	Add support for Wholesale Pricing Plus to assist in displaying prices without tax but charging taxes at checkout. Useful for EU users.
+
+Version 2.6.16 March 18, 2014
+
+	Updated JS for bulk edit in WooCommerce 2.1
+
+Version 2.6.15 February 28, 2014
+
+	Fixed condition in WooCommerce 2.1.x where a fatal error occurs when a variable product has no regular price or sale price
+
+Version 2.6.14 February 20, 2014
+
+	Adjusted function calls to avoid deprecated functions
+
+Version 2.6.13 January 21, 2014
+
+	Tweaked hooks for WooCommerce 2.1 processing
+
+Version 2.6.12 January 21, 2014
+
+	WooCommerce 2.1 compatbility
+	
+	Tweak to remove sale price HTML if the shopper is a wholesale buyer
+	
+Version 2.6.11 November 26, 2013
+
+	Updated variation price display for a condition when no wholesale price is set in any variation of a given product.
+	
+	Add get_price() to the dummy class to avoid errors when no wholesale price is set in any variation of a given product.
+
+Version 2.6.10 November 4, 2013
+
+	Updated variation price display for a condition when no wholesale price is set - formerly showed $0.
+
+Version 2.6.9 August 12, 2013
+
+	Fixed typo in function name
+
+Version 2.6.8 August 2, 2013
+
+	Addition HTML code for variations' wholesale price field to address issues with Chrome browser. This should fix the problem of seeing a red box when trying to enter a decimal number and save the product. 
+
+Version 2.6.7 July 5, 2013
+
+	Tweaked price display to not show &quot;From&quot; label when all variations have the same price.
+	
+Version 2.6.6 July 1, 2013
+
+	Removed unused JS code
+	
+	Fixed wholesale price entry field for simple products. No more JS required. 
+
+Version 2.6.5 July 1, 2013
+
+	Removed JS in favor of hook function to add wholesale price field. This fixes an issue where adding additional variation attributes and linking all variation might have caused the wholesale price field to disappear until the post edit page was refreshed.
+	
+Version 2.6.4 June 21, 2013
+
+	Fixed bulk edit for wholesale prices in variations
+	
+Version 2.6.3 May 9, 2013
+
+	Changed code to insert wholesale price fields differently to handle stores that don't have stock management enabled
+	
+Version 2.6.2 March 27, 2013
+
+	Added code to better support WooCommerce 2.x
+	
+	Fixed $0 and $1 price display issues
+	
+Version 2.6.1 March 18, 2013
+
+	Changed hook priority for prices to fix $0 price display
+
+Version 2.6 March 8, 2013
+
+	Added support for WooCommerce 2.0
+
+Version 2.5 March 1, 2013
+
+	Added bulk edit capability for variations
+
+	Added language support
+
+
+Version 2.4.4 February 15, 2013
+
+	Corrected typo in Javascript code that caused attribute tab to sometimes disappear.
+
+
+Version 2.4.3 February 7, 2013
+
+	Updated code to use woocommerce_price() function instead of internal function of a similar nature.
+
+	
+Version 2.4.2 January 17, 2013
+
+	Fixed potential filtering loop when a product has an empty price field
+	Added checking to eliminate potential warning messages.
+	
+Version 2.4.1 - January 14, 2013
+
+	Updated to support currency position
+	
+Version 2.4 - January 2013
+
+	Updated to support automatic updates
+
+Version 2.3 - December 12, 2012
+
+	- Fixed a bug where removing wholesale pricing amount did not complete successfully
+
+	
+Version 2.2.9 - November 26, 2012
+
+	- Fixed a bug related to tax removal
+
+Version 2.2.8 - November 2, 2012
+
+	- Corrected variable name issues related to conditions where products
+	have no retail/sale price but do have a wholesale price
+
+
+Version 2.2.7 - November 1, 2012
+
+	- Added support for simple products that have no retail/sale price 
+	set but do have a wholesale price set
+	
+	- Reinstated previously removed code to avoid PHP "fatal errors" in WooCommerce 2.1
+
+Version 2.2.6 - October 24, 2012
+
+	- Fixed a typo in a variable name the prevented the add to cart
+	button from appearing on a product page in some situations.
+
+
+Version 2.2.5 - October 23, 2012
+
+	- Fixed a condition where prices don't show on product pages 
+	if a variable product doesn't have a retail or sale price AND
+	wholesale prices are set, and all variations have the same price
+
+
+Version 2.2.4 - October 14, 2012
+
+	- Fixed a condition where prices don't show on product pages 
+	if a variable product doesn't have a retail or sale price
+
+
+Version 2.2.3 - October 8
+
+	- Added missing global that affects tax inclusion / exclusion
+
+
+Version 2.2.2 - September 27, 2012
+
+	Updated tax variable checking
+	Add support for Wholesale Pricing Plus add-on module
+
+
+Version 2.2.1 - August 25, 2012
+
+	Add variable to allow admins to disable removing taxes for wholesale buyers
+
+Version 2.2 - August 25, 2012
+
+	Updated the code to better support displaying wholesale 
+	prices for variations when the user is logged in as a
+	wholesale buyer.
+
+
+

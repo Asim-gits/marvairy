@@ -1,0 +1,435 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+button.wishlist-button.button.is-outline.circle.icon {
+    border-radius: 0px !important;
+}
+[data-icon-label]:after {
+    background-color: #000 !important;
+}
+a.button.is-outline.circle.icon.button.product-video-popup, span.page-number.current, a.page-number {
+    border-radius: 0px !important;
+}
+
+.form-flat button, .form-flat input {
+    border-radius: 0 !important;
+}
+img.cst-size.pull-left {
+    width: 20%;
+}
+.category-page-row .shop-container .term-description {
+    display: none;
+}
+.font26 {
+    font-size: 26px !important;
+}
+hr.after-title {
+    margin: 12px 0px 20px 0px !important;
+    width: 35px;
+    border: 2px #000 solid;
+    height: 2px;
+    opacity: 0.9;
+}
+.shop-container .price-wrapper {
+    min-height: 36px;
+}
+.shop-container .price{
+    margin: 8px 0 !important;
+}
+.image-tools.is-small.top.right.show-on-hover {
+    padding: 45%;
+}
+.image-fade-out {
+    background: none;
+}
+.image-fade-out:hover{
+    background: #000000 !important;
+}
+.image-tools.is-small.top.right.show-on-hover:hover {
+    background: rgba(0, 0, 0, 0.57);
+    left: 1px;
+}
+/*.singlep-page {
+    margin-top: 4px;
+    float: left;
+}
+body.single-product button.single_add_to_cart_button.button.alt {
+    margin-top: 70px;
+    float: left;
+}*/
+
+.social-icons.share-icons.share-row.relative.icon-style-outline {
+    float: left;
+    clear: both;
+}
+.quant-label {
+ /*    margin: 0 auto;
+    Change from 30 to 49 to 39
+    padding: 0 39px 0 0; */
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    display: block;
+    width: 86px;
+}
+.single-wishlist button.wishlist-button.button.is-outline.circle.icon {
+    border-radius: 0px !important;
+}
+.cust-text {
+    float: right;
+    width: 100%;
+    text-align: right;
+    top: 45%;
+    height: auto;
+    display: block;
+}
+
+.black-divider {
+    background-color: rgba(0, 0, 0, 0.66) !important;
+}
+
+
+@font-face {
+    font-family: 'Oxygen-Regular';
+    src: url('fonts/Oxygen-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Oxygen-Regular.woff') format('woff'), url('fonts/Oxygen-Regular.ttf')  format('truetype'), url('fonts/Oxygen-Regular.svg#Oxygen-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gabriola';
+    src: url('fonts/Gabriola.eot?#iefix') format('embedded-opentype'),  url('fonts/Gabriola.woff') format('woff'), url('fonts/Gabriola.ttf')  format('truetype'), url('fonts/Gabriola.svg#Gabriola') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),  url('fonts/Montserrat-SemiBold.woff') format('woff'), url('fonts/Montserrat-SemiBold.ttf')  format('truetype'), url('fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DancingScript-Regular';
+    src: url('fonts/DancingScript-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/DancingScript-Regular.woff') format('woff'), url('fonts/DancingScript-Regular.ttf')  format('truetype'), url('fonts/DancingScript-Regular.svg#DancingScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf')  format('truetype'), url('fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+.banner-layers .col-inner p{
+    font-size:32px;
+    font-family: 'Montserrat-SemiBold';
+}
+.banner-layers .slider-title-italic i{
+    font-family: 'DancingScript-Regular';
+    font-size:24px;}
+.banner-layers h2.uppercase strong{
+    /* Change from 94 to 57 */
+    font-size:57px;
+    font-family: 'Montserrat-SemiBold';}
+.button.icon.is-small{
+    border:none;
+    color:#000;}
+.nav>li.header-divider{
+    border-color:#000 !important;
+}
+.top-divider{
+    border-top:none !important;
+}
+.header-bottom ul.header-nav li a{
+    padding:0 20px 20px 20px;
+    border-bottom:1px solid #fff;
+    /*font-family:;*/
+}
+.header-language-dropdown>a i{
+    display:none;}
+.header-language-dropdown>a{
+    font-size:0px !important;
+    background:url(img/world.png) no-repeat;
+    width:20px;
+    height:25px;
+}
+.account-item .icon-user:before{
+    font-size:0px !important;
+    background: url(img/account.png) no-repeat;
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+}
+.button:not(.icon){
+    color:#fff !important;
+    background-color: black !important;
+    font-family: 'Montserrat-Regular';
+    font-size:14px;
+    border: 1px solid #000 !important;
+    -webkit-transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+}
+.button:hover{
+    color:#000 !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+.badge-container:not(.is-larger) {
+    margin: 0 0 170px 0;
+} 
+button.wishlist-button.button.is-outline.circle.icon:hover {
+    border: 1px black solid;
+}
+.text-black *, p.text-black, h1.text-black{
+    color: black !important;
+}
+a.icon.button.circle.is-outline.tooltip.tooltipstered {
+    border-radius: 0 !important;
+}
+a#top-link {
+    border-radius: 0 !important;
+}
+.header-bottom ul li a{
+    font-family: 'Montserrat-Regular';
+    font-size:16px;
+}
+a.button.white{
+    border:2px solid #000;
+}
+.home .section-title-normal, .home .section-title-normal span{
+    border-bottom:0;}
+.section-title-normal span{
+    font-size:34px !important;}
+.home .section-title-normal span:after{
+    content:'';
+    display:block;
+    width:20px;
+    height:2px;
+    background-color:#000;
+}
+.no-padding-home >div.col:nth-of-type(1), .no-padding-home >div.col:nth-of-type(3) div.col:nth-of-type(2){
+    padding:0;}
+#footer .widget .is-divider{
+    display:none !important;}
+#footer ul.menu>li+li, #footer .widget>ul>li+li{
+    border-top:none !important;}
+#footer h3.widget-title, #footer h2.widgettitle, #footer h3{
+    text-transform:uppercase;
+    font-family: 'Gabriola';
+    font-size:27px !important;
+    line-height:1.05;
+    font-weight:normal;
+    color:#383838;}
+#footer ul.menu>li a{
+    color:#383838;}
+#footer ul.menu>li:before{
+    content:'\f105';
+    padding-right:7px;
+    color:#383838;
+    font-family: 'fl-icons' !important;
+    speak: none !important;
+}
+.absolute-footer.dark{
+    background-color:#383838;}
+.dark .payment-icon svg {
+    fill: #383838;
+}
+.dark .payment-icon{
+    background-color:#afafaf;}
+.copyright-footer{
+    text-transform:uppercase;
+    color:#afafaf;
+    font-size:12px !important;
+    margin-top:20px;
+}
+#footer{
+    background-color:#f7f7f7;
+    padding-top:40px;}
+#footer>.row {
+    padding-bottom:20px;}
+#footer a.icon{
+    color:#383838;}
+.social-icons{
+    margin:43px 0 30px 0;}
+#footer a.icon:hover{
+    /*color:#fff;
+    background-color:#383838;
+    border-radius:25px;*/
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Gabriola' !important;
+    font-weight:normal !important;}
+h1{
+    font-size:60px !important;}
+h2{
+    font-size:34px !important;}
+h3{
+    font-size:30px !important;}
+h4{
+    font-size:26px !important;}
+h5{
+    font-size:22px !important;}
+body , body p{
+    font-family: 'Oxygen-Regular' !important;
+    font-size:14px !important;}
+
+a.remove, a.icon-remove {
+    border-radius: 0px;
+}
+@media only screen and (max-width: 48em) {
+    /*************** ADD MOBILE ONLY CSS HERE  ***************/
+    .top-title-banner {
+        min-height: 174px !important;
+    }
+    .top-title-banner .banner-layer {
+        width: 100% !important;
+    }
+    .top-title-banner .banner-layer h1 {
+        text-align: center !important;
+    }
+    .top-title-banner .banner-layer:nth-of-type(2) {
+        padding-bottom: 25px !important;
+    }
+    .cust-text.text-box.banner-layer {
+        text-align: center !important;
+        margin-top: 16%;
+        font-size: 11px;
+    }
+    .cust-text.text-box.banner-layer .text-right {
+        text-align: center !important;
+    }
+
+}
+/* Custom CSS by Asim */
+.woof .widget_price_filter .ui-slider .ui-slider-handle {
+    background-color: black;
+    border-radius: 0px;
+}
+
+.woof .widget_price_filter .ui-slider-horizontal .ui-slider-range {
+    background-color: black !important;
+}
+.widget_price_filter .price_slider_amount .button{
+    border-radius: 0px;
+}
+.payment-icon{
+    border-radius: 0px;
+}
+
+
+tr.order-total {
+    background-color: rgba(204, 207, 218, 0.23);
+    font-size: 17px;
+}
+
+.order-total th {
+    font-weight: 800 !important;
+    color: black;
+}
+.woof .widget_price_filter .price_slider_wrapper .ui-widget-content{
+    border-radius:0px;
+}
+.dashboard-links a{
+    border-radius:0px;
+}
+.circle img {
+    border-radius: 0px !important;
+}
+
+.woocommerce-ordering, .woocommerce-ordering select{
+    z-index: 1;
+}
+
+/* Dated 6/22/17 */
+@media only screen and (max-width: 850px) {
+    /*************** ADD MOBILE ONLY CSS HERE  ***************/
+.banner-layers h2.uppercase strong{
+    /* Change from 57 to 34 */
+    font-size:34px;
+    }
+
+}
+
+@media only screen and (min-width: 980px) {
+   
+li#nav_menu-4 {
+    padding: 0 30px;
+}
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1100px) {
+   
+.large-2 {
+    max-width: 25%;
+   
+    flex-basis: 25%;
+}
+.large-4{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+}
+@media only screen and (min-width: 550px) and (max-width: 890px) {
+   
+.large-2 {
+    max-width: 50%;
+   
+    flex-basis: 50%;
+}
+.large-4{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+}
+
+@media only screen and (min-width: 890px) and (max-width: 980px) {
+   
+.large-2 {
+    max-width: 25%;
+   
+    flex-basis: 25%;
+}
+.large-4{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+}
+@media only screen and (max-width: 850px) {
+
+.large-4{
+    max-width: 100%;
+    flex-basis: 100%;
+  
+}
+.ml-half {
+    margin-left: 0px;
+}
+}
+/* Dated 6/23/17 */
+td label {
+    padding-right: 7px;
+}
+/* [for="color"] {
+    padding-right: 0px;
+} */
+
+td.label {
+    width: 86px;
+}
+
+.variations td{
+    padding:0;
+}
+
