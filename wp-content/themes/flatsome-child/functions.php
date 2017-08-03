@@ -4,7 +4,6 @@
  *  @feedback: feedback-1
  */
 
-
 include("inc/woocommerce/custom/custom_woofunctions.php");
 include("inc/shortcodes/category_listing.php");
 // Shortcode for navXT
